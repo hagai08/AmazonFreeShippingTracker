@@ -13,7 +13,7 @@ openExtensionButton.addEventListener("click", async () => {
   //   target: { tabId: tab.id },
   //   function: setPageBackgroundColor,
   // });
-  var newURL = "http://stackoverflow.com/";
+  var newURL = "file://ger/ec/proj/ha/mdo/mpv/aig/Users/ccd/table-01/index.html";
   chrome.tabs.create({ url: newURL });
 });
 
