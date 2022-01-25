@@ -1,6 +1,6 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Amazon Free Shipping Tracker",
+  "description": "Tracking your products for free shipping!",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
