@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
+    <style>
+      button {
+        display: inline-block;
+        background-color: #76bfe9;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        align-self: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 200px;
+        height: fit-content;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #f7c2f9;
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+        body {
+  font-family: Arial;
+  margin: 0;
+
+  
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #d19dbc;
+  color: white;
+  font-size: 30px;
+  
+}
+.container {
+  height: 200px;
+  position: relative;
+  border: 5px solid #d19dbc;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    </style>
   </head>
   <body>
-    <button id="openExtension"></button>
+    <div class="header">
+
+    <header>Free Shipping Tracker</header>
+
+  </div>
+    <div class="container">
+    <div class="center">
+    <button id="addItem">Add Item to Track </button>
+    <button id="openExtension">My tracking Items</button>
     <script src="popup.js"></script>
+  </div>
+</div>
+   
   </body>
 </html>
