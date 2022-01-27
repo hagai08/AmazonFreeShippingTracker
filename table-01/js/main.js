@@ -1,3 +1,4 @@
+
 (function($) {
 
 	"use strict";
@@ -8,6 +9,12 @@
 	CreateBody(table);
 
 	document.getElementById("table-wrap").appendChild(table);
+
+// 	fetch("file:///C:/Workspace/AmazonFreeShippingTracker/table-01/js/data.json")
+//   .then(response => response.json())
+//   .then(json => console.log(json));
+
+//   var json = JSON.parse($.getJSON({'url': "file:///C:/Workspace/AmazonFreeShippingTracker/table-01/js/data.json", 'async': false}).responseText);
 
 	function CreateHeader(table) {
 		var thead = document.createElement('thead');   
@@ -40,27 +47,28 @@
 
 	function CreateBody(table) {
 		var tbody = document.createElement('tbody');
-		// fetch("data.json")
-		// .then(response => {
-   		// 	return response.json();
-		// }).then(jsondata => console.log(jsondata));
 
-		var text = readTextFile("file:///C:/Workspace/AmazonFreeShippingTracker/table-01/js/data.json");
-		console.log(text);
-		
 		for (var i = 1; i < 4; i++){
 			var tr = document.createElement('tr');
 		
 			var td1 = document.createElement('td');
 			var td2 = document.createElement('td');
+			var td3 = document.createElement('td');
 		
 			var text1 = document.createTextNode('Text1');
 			var text2 = document.createTextNode('Text2');
-		
+			
+			var oImg = document.createElement('img');
+			oImg.src = "\\images\\doll.jpg";
+			oImg.setAttribute('height', '100px');
+			oImg.setAttribute('width', '100px');
+
 			td1.appendChild(text1);
 			td2.appendChild(text2);
+			td3.appendChild(oImg);
 			tr.appendChild(td1);
 			tr.appendChild(td2);
+			tr.appendChild(td3);
 		
 			table.appendChild(tr);
 		}
