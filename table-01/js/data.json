@@ -1,0 +1,11 @@
+{
+    "Products" : [
+    {
+       "image":"..\\images\\doll.jpg",
+       "product":"Doll",
+       "link":"https://www.amazon.com/Surprise-TravelTM-Fashion-%D7%94%D7%A4%D7%AA%D7%A2%D7%95%D7%AA-%D7%AA%D7%9C%D7%91%D7%95%D7%A9%D7%AA/dp/B096D1YN4T/ref=sr_1_4_sspa?crid=77T1DU0IA6HG&keywords=doll&qid=1643119100&sprefix=doll+%2Caps%2C333&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVUhITE1POERCNU5HJmVuY3J5cHRlZElkPUEwMTg2Mjc3MTNXSFZGSkUwSjYzRSZlbmNyeXB0ZWRBZElkPUEwMzY2MDMzMlQyV1ZRVUtRRFRISyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+       "price":"48.90",
+       "shipping":"Yes"
+    }
+  ]
+ }
